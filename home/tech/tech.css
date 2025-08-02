@@ -1,0 +1,41 @@
+body {
+  background-color: #0f0f0f;
+  font-family: sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+.tech-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.tech-ball {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #2e2e2e, #1a1a1a);
+  box-shadow: 0 4px 12px rgba(145, 94, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-ball:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.tech-ball img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}

@@ -1,0 +1,116 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .contact-container {
+    flex-direction: row;
+  }
+}
+
+.form-box {
+  background-color: #1e1e1e;
+  padding: 32px;
+  border-radius: 16px;
+  flex: 0.75;
+  box-shadow: 0 0 10px #915eff88;
+}
+
+.section-subtitle {
+  color: #aaa;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.contact-form span {
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #2b2b2b;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  background-color: #915eff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.contact-form button:hover {
+  background-color: #7d47f4;
+}
+
+/* Right Side: EarthCanvas placeholder */
+.earth-placeholder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.earth-placeholder img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}

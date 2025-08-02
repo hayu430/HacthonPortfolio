@@ -1,0 +1,93 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.about-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.intro-text .sub-text {
+  color: #aaa;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.intro-text .main-heading {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+}
+
+.about-description {
+  color: #bbb;
+  font-size: 17px;
+  max-width: 750px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.cards-container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(to right, #6e56cf, #ec4899);
+  border-radius: 20px;
+  padding: 2px;
+  width: 250px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-inner {
+  background-color:#0F0F0F;
+  border-radius: 20px;
+  padding: 32px 24px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.card-inner img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  
+}
