@@ -153,3 +153,30 @@ body {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(24px); }
 }
+@media (max-width: 767px) {
+  .hero-section {
+    padding-bottom: 120px; /* Prevent scroll-indicator overlap */
+  }
+
+  .hero-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+  }
+
+  .resume-links {
+    justify-content: center;
+    width: 100%;
+  }
+}
